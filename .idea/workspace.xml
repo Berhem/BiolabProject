@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e91b79e5-ab0d-456d-b60f-7e139f656aca" name="Default" comment="" />
+    <list default="true" id="e91b79e5-ab0d-456d-b60f-7e139f656aca" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Database/CRUD/GebruikerDb.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/canvasInt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/voronai.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Biolab Brussel.iml" afterPath="$PROJECT_DIR$/.idea/Biolab Brussel.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Data/Project.php" afterPath="$PROJECT_DIR$/Data/Project.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database/CRUD/ProjectDb.php" afterPath="$PROJECT_DIR$/Database/CRUD/ProjectDb.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database/Verbinding/DatabaseFactory.php" afterPath="$PROJECT_DIR$/Database/Verbinding/DatabaseFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+    </list>
     <ignored path="Biolab Brussel.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -22,68 +34,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Database/Verbinding/Database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseFactory.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Database/Verbinding/DatabaseFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProjectDb.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Database/CRUD/ProjectDb.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-              <folding>
-                <marker date="1458765916153" expanded="true" signature="394:415" placeholder="SELECT * FRO... Project" />
-                <marker date="1458765916153" expanded="true" signature="858:898" placeholder="SELECT * FRO... Persoon" />
-                <marker date="1458765916153" expanded="true" signature="1344:1383" placeholder="SELECT * FRO... Persoon" />
-                <marker date="1458765916153" expanded="true" signature="1770:1828" placeholder="INSERT INTO Persoon... " />
-                <marker date="1458765916153" expanded="true" signature="1988:2025" placeholder="DELETE FROM " />
-                <marker date="1458765916153" expanded="true" signature="2256:2320" placeholder="UPDATE Perso... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Project.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/Project.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state relative-caret-position="165">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="canvasInt.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/canvasInt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="voronai.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/voronai.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21795">
+              <caret line="1455" column="0" selection-start-line="1455" selection-start-column="0" selection-end-line="1455" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="734">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="861">
+              <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -95,17 +90,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Database/Verbinding/Database.php" />
-        <option value="$PROJECT_DIR$/Database/Verbinding/DatabaseFactory.php" />
-        <option value="$PROJECT_DIR$/Database/CRUD/ProjectDb.php" />
+        <option value="$PROJECT_DIR$/Data/Gebruiker.php" />
         <option value="$PROJECT_DIR$/Data/Project.php" />
+        <option value="$PROJECT_DIR$/Database/Verbinding/DatabaseFactory.php" />
+        <option value="$PROJECT_DIR$/Database/CRUD/GebruikerDb.php" />
+        <option value="$PROJECT_DIR$/Database/CRUD/ProjectDb.php" />
+        <option value="$PROJECT_DIR$/project.php" />
+        <option value="$PROJECT_DIR$/js/voronai.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/canvasInt.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
@@ -124,10 +128,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="312" />
-    <option name="y" value="42" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -158,27 +160,55 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BiolabProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BiolabProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BiolabProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -192,11 +222,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -210,11 +240,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -224,11 +254,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Biolab Brussel" />
+              <option name="myItemId" value="BiolabProject" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -238,16 +268,23 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Werkstuk_Berhem_Isik" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.php">
     <configuration default="false" name="Database.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Biolab Brussel/Database/Verbinding/Database.php">
@@ -312,17 +349,18 @@
       <updated>1458764396044</updated>
       <workItem from="1458764397313" duration="3312000" />
       <workItem from="1458819935906" duration="789000" />
+      <workItem from="1458822416143" duration="8558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4101000" />
+    <option name="totallyTimeSpent" value="12659000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="312" y="42" width="1400" height="1000" extended-state="1" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -359,6 +397,62 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Database/Verbinding/Database.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/Verbinding/DatabaseFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/CRUD/ProjectDb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <marker date="1458830270000" expanded="true" signature="394:415" placeholder="SELECT * FRO... Project" />
+            <marker date="1458830270000" expanded="true" signature="860:900" placeholder="SELECT * FRO... Persoon" />
+            <marker date="1458830270000" expanded="true" signature="1348:1387" placeholder="SELECT * FRO... Project" />
+            <marker date="1458830270000" expanded="true" signature="1781:1818" placeholder="SELECT * FRO... Project" />
+            <marker date="1458830270000" expanded="true" signature="2205:2254" placeholder="INSERT INTO Persoon... " />
+            <marker date="1458830270000" expanded="true" signature="2405:2442" placeholder="DELETE FROM " />
+            <marker date="1458830270000" expanded="true" signature="2673:2728" placeholder="UPDATE Perso... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/Verbinding/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
@@ -378,12 +472,13 @@
         <state relative-caret-position="714">
           <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
-            <marker date="1458765916153" expanded="true" signature="394:415" placeholder="SELECT * FRO... Project" />
-            <marker date="1458765916153" expanded="true" signature="858:898" placeholder="SELECT * FRO... Persoon" />
-            <marker date="1458765916153" expanded="true" signature="1344:1383" placeholder="SELECT * FRO... Persoon" />
-            <marker date="1458765916153" expanded="true" signature="1770:1828" placeholder="INSERT INTO Persoon... " />
-            <marker date="1458765916153" expanded="true" signature="1988:2025" placeholder="DELETE FROM " />
-            <marker date="1458765916153" expanded="true" signature="2256:2320" placeholder="UPDATE Perso... " />
+            <marker date="1458830270000" expanded="true" signature="394:415" placeholder="SELECT * FRO... Project" />
+            <marker date="1458830270000" expanded="true" signature="860:900" placeholder="SELECT * FRO... Persoon" />
+            <marker date="1458830270000" expanded="true" signature="1348:1387" placeholder="SELECT * FRO... Project" />
+            <marker date="1458830270000" expanded="true" signature="1781:1818" placeholder="SELECT * FRO... Project" />
+            <marker date="1458830270000" expanded="true" signature="2205:2254" placeholder="INSERT INTO Persoon... " />
+            <marker date="1458830270000" expanded="true" signature="2405:2442" placeholder="DELETE FROM " />
+            <marker date="1458830270000" expanded="true" signature="2673:2728" placeholder="UPDATE Perso... " />
           </folding>
         </state>
       </provider>
@@ -412,57 +507,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Database/CRUD/ProjectDb.php">
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <marker date="1458765916153" expanded="true" signature="394:415" placeholder="SELECT * FRO... Project" />
-            <marker date="1458765916153" expanded="true" signature="858:898" placeholder="SELECT * FRO... Persoon" />
-            <marker date="1458765916153" expanded="true" signature="1344:1383" placeholder="SELECT * FRO... Persoon" />
-            <marker date="1458765916153" expanded="true" signature="1770:1828" placeholder="INSERT INTO Persoon... " />
-            <marker date="1458765916153" expanded="true" signature="1988:2025" placeholder="DELETE FROM " />
-            <marker date="1458765916153" expanded="true" signature="2256:2320" placeholder="UPDATE Perso... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Project.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Database/Verbinding/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-174">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/Data/Project.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Database/Verbinding/DatabaseFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/Gebruiker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/CRUD/GebruikerDb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="62" column="152" selection-start-line="62" selection-start-column="152" selection-end-line="62" selection-end-column="152" />
+          <folding>
+            <marker date="1458830179000" expanded="true" signature="398:421" placeholder="SELECT * FRO... Gebruiker" />
+            <marker date="1458830179000" expanded="true" signature="864:906" placeholder="SELECT * FRO... Gebruiker" />
+            <marker date="1458830179000" expanded="true" signature="1352:1391" placeholder="SELECT * FRO... Gebruiker" />
+            <marker date="1458830179000" expanded="true" signature="1781:1859" placeholder="INSERT INTO Gebruiker... " />
+            <marker date="1458830179000" expanded="true" signature="1781:1864" placeholder="INSERT INTO Gebruiker... " />
+            <marker date="1458830179000" expanded="true" signature="2065:2102" placeholder="DELETE FROM " />
+            <marker date="1458830179000" expanded="true" signature="2337:2398" placeholder="UPDATE Proje... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/CRUD/ProjectDb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="72" column="143" selection-start-line="72" selection-start-column="143" selection-end-line="72" selection-end-column="143" />
+          <folding>
+            <marker date="1458830270000" expanded="true" signature="394:415" placeholder="SELECT * FRO... Project" />
+            <marker date="1458830270000" expanded="true" signature="860:900" placeholder="SELECT * FRO... Persoon" />
+            <marker date="1458830270000" expanded="true" signature="1348:1387" placeholder="SELECT * FRO... Project" />
+            <marker date="1458830270000" expanded="true" signature="1781:1818" placeholder="SELECT * FRO... Project" />
+            <marker date="1458830270000" expanded="true" signature="2205:2254" placeholder="INSERT INTO Persoon... " />
+            <marker date="1458830270000" expanded="true" signature="2405:2442" placeholder="DELETE FROM " />
+            <marker date="1458830270000" expanded="true" signature="2673:2728" placeholder="UPDATE Perso... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/voronai.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21795">
+          <caret line="1455" column="0" selection-start-line="1455" selection-start-column="0" selection-end-line="1455" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/canvasInt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
           <folding />
         </state>
       </provider>

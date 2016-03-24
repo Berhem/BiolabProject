@@ -20,7 +20,7 @@ class ProjectDb {
         return $resultatenArray;
     }
 
-    public static function getAllByVoornaam($voornaam) {
+    /*public static function getAllByVoornaam($voornaam) {
         $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Persoon WHERE Voornaam='?'", array($voornaam));
         $resultatenArray = array();
         for ($index = 0; $index < $resultaat->num_rows; $index++) {
@@ -29,10 +29,10 @@ class ProjectDb {
             $resultatenArray[$index] = $nieuw;
         }
         return $resultatenArray;
-    }
+    }*/
 
     public static function getById($id) {
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Persoon WHERE PersoonId=?", array($id));
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Project WHERE ProjectId=?", array($id));
         if ($resultaat->num_rows == 1) {
             $databaseRij = $resultaat->fetch_array();
             return self::converteerRijNaarObject($databaseRij);
@@ -42,24 +42,35 @@ class ProjectDb {
         }
     }
 
-    public static function insert($persoon) {
-        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO Persoon(Voornaam, Achternaam) VALUES ('?','?')", array($persoon->voornaam, $persoon->achternaam));
+    public static function getByAdminId($id) {
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Project WHERE AdminId=?", array($id));
+        if ($resultaat->num_rows == 1) {
+            $databaseRij = $resultaat->fetch_array();
+            return self::converteerRijNaarObject($databaseRij);
+        } else {
+            //Er is waarschijnlijk iets mis gegaan
+            return false;
+        }
+    }
+
+    public static function insert($project) {
+        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO Project(Titel, Text) VALUES ('?','?')", array($project->Titel, $project->Text));
     }
 
     public static function deleteById($id) {
-        return self::getVerbinding()->voerSqlQueryUit("DELETE FROM Persoon where PersoonId=?", array($id));
+        return self::getVerbinding()->voerSqlQueryUit("DELETE FROM Project where ProjectId=?", array($id));
     }
 
-    public static function delete($persoon) {
-        return self::deleteById($persoon->persoonId);
+    public static function delete($project) {
+        return self::deleteById($project->ProjectId);
     }
 
-    public static function update($persoon) {
-        return self::getVerbinding()->voerSqlQueryUit("UPDATE Persoon SET Voornaam='?',Achternaam='?' WHERE PersoonId=?", array($persoon->voornaam, $persoon->achternaam, $persoon->persoonId));
+    public static function update($project) {
+        return self::getVerbinding()->voerSqlQueryUit("UPDATE Project SET Titel='?',Text='?' WHERE ProjectId=?", array($project->Titel, $project->Text, $project->ProjectId));
     }
 
     protected static function converteerRijNaarObject($databaseRij) {
-        return new Persoon($databaseRij['PersoonId'], $databaseRij['Voornaam'], $databaseRij['Achternaam']);
+        return new Project($databaseRij['ProjectId'], $databaseRij['Titel'], $databaseRij['Datum'], $databaseRij['AdminId'], $databaseRij['Text']);
     }
 
 }

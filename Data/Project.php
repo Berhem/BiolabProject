@@ -1,20 +1,19 @@
 <?php
 
 class Project {
-    public $projectId;
-    public $titel;
-    public $datum;
-    public $adminId;
-    public $text;
+    public $ProjectId;
+    public $Titel;
+    public $Datum;
+    public $AdminId;
+    public $Text;
 
-    public function __construct($projectId, $titel, $datum, $adminId, $text) {
-        $this->projectId = $projectId;
-        $this->titel = $titel;
-        $this->datum = $datum;
-        $this->adminId = $adminId;
-        $this->text = $text;
+    public function __construct($ProjectId, $Titel, $Datum, $AdminId, $Text) {
+        $this->ProjectId = $ProjectId;
+        $this->Titel = $Titel;
+        $this->Datum = $Datum;
+        $this->AdminId = $AdminId;
+        $this->Text = $Text;
     }
 
     //Extra functionaliteit kan je hier schrijven
 }
-?>

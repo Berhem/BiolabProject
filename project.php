@@ -2,15 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Biolab Brussels </title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <title>WebShop Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery-2.2.2.js"></script>
-    <script type="text/javascript" src="js/paper.js"></script>
-    <script type="text/javascript" src="js/voronai.js"></script>
-    <script type="text/paperscript" canvas="canvas" src="js/canvasInt.js"></script>
-    
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
 </head>
 <body>
 <div class="container">
@@ -20,7 +17,7 @@
         </div>
         <nav class="menu_wrapper">
             <ul>
-                <li><a href="project.php" name="project">Project</a></li>
+                <li class="active"><a href="project.php" name="project">Project</a></li>
                 <li><a href="" name="materialen">Materialen</a></li>
                 <li><a href="" name="inschrijving">Inschrijving</a></li>
                 <li><a href="" name="team">Team</a></li>
@@ -30,7 +27,6 @@
     </header>
     <div class="body_container">
 
-        <canvas id="canvas" resize ></canvas>
 
     </div>
     <div class="footer_container">

@@ -10,14 +10,13 @@ class DatabaseFactory {
     public static function getDatabase() {
 
         if (self::$verbinding == null) {
-            $mijnComputernaam = "";
-            $mijnGebruikersnaam = "";
-            $mijnWachtwoord = "";
-            $mijnDatabase = "";
+            $mijnComputernaam = "localhost:3306";
+            $mijnGebruikersnaam = "root";
+            $mijnWachtwoord = "root";
+            $mijnDatabase = "biolabbrussels";
             self::$verbinding = new Database($mijnComputernaam, $mijnGebruikersnaam, $mijnWachtwoord, $mijnDatabase);
         }
         return self::$verbinding;
     }
 
 }
-?>

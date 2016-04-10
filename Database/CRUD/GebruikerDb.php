@@ -30,9 +30,20 @@ class GebruikerDb {
         }
         return $resultatenArray;
     }
+    
+    public static function getAllByEmail($email) {
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Gebruiker WHERE Email='?'", array($email));
+        $resultatenArray = array();
+        for ($index = 0; $index < $resultaat->num_rows; $index++) {
+            $databaseRij = $resultaat->fetch_array();
+            $nieuw = self::converteerRijNaarObject($databaseRij);
+            $resultatenArray[$index] = $nieuw;
+        }
+        return $resultatenArray;
+    }
 
     public static function getById($id) {
-        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Gebruiker WHERE AdminId=?", array($id));
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Gebruiker WHERE Id=?", array($id));
         if ($resultaat->num_rows == 1) {
             $databaseRij = $resultaat->fetch_array();
             return self::converteerRijNaarObject($databaseRij);
@@ -44,23 +55,23 @@ class GebruikerDb {
 
 
     public static function insert($gebruiker) {
-        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO Gebruiker(Naam, Voornaam, Email, Wachtwoord) VALUES ('?','?', '?', '?')", array($gebruiker->Naam, $gebruiker->Voornaam, $gebruiker->Email, $gebruiker->Wachtwoord));
+        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO Gebruiker(Naam, Voornaam, Email, Wachtwoord, Afbeelding) VALUES ('?','?', '?', '?', '?')", array($gebruiker->Naam, $gebruiker->Voornaam, $gebruiker->Email, $gebruiker->Wachtwoord, $gebruiker->Afbeelding));
     }
 
     public static function deleteById($id) {
-        return self::getVerbinding()->voerSqlQueryUit("DELETE FROM Gebruiker where AdminId=?", array($id));
+        return self::getVerbinding()->voerSqlQueryUit("DELETE FROM Gebruiker where Id=?", array($id));
     }
 
     public static function delete($gebruiker) {
-        return self::deleteById($gebruiker->AdminId);
+        return self::deleteById($gebruiker->Id);
     }
 
     public static function update($gebruiker) {
-        return self::getVerbinding()->voerSqlQueryUit("UPDATE Gebruiker SET Email='?',Wachtwoord='?' WHERE AdminId=?", array($gebruiker->Email, $gebruiker->Email, $gebruiker->Wachtwoord, $gebruiker->AdminId));
+        return self::getVerbinding()->voerSqlQueryUit("UPDATE Gebruiker SET Email='?',Wachtwoord='?',Afbeelding='?' WHERE Id=?", array($gebruiker->Email, $gebruiker->Wachtwoord, $gebruiker->Afbeelding, $gebruiker->Id));
     }
 
     protected static function converteerRijNaarObject($databaseRij) {
-        return new Gebruiker($databaseRij['AdminId'], $databaseRij['Naam'], $databaseRij['Voornaam'], $databaseRij['Email'], $databaseRij['Wachtwoord']);
+        return new Gebruiker($databaseRij['Id'], $databaseRij['Naam'], $databaseRij['Voornaam'], $databaseRij['Email'], $databaseRij['Wachtwoord'], $databaseRij['Afbeelding']);
     }
 
 }

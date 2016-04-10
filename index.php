@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Biolab Brussels </title>
+    <title>Open Biolab Brussels </title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
     <link rel="apple-touch-icon" href="img/favicon.png" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -20,15 +20,14 @@
         </div>
         <nav class="menu_wrapper">
             <ul>
-                <li><a href="project.php" name="project">Project</a></li>
-                <li><a href="" name="materialen">Materialen</a></li>
-                <li><a href="" name="inschrijving">Inschrijving</a></li>
-                <li><a href="" name="team">Team</a></li>
-                <li><a href="" name="overons">Over ons</a></li>
+                <li><a href="project.php" name="project">Projecten</a></li>
+                <li><a href="team.php" name="team">Team</a></li>
+                <li><a href="contact.php" name="contact">Contact</a></li>
+                <li><a href="locatie.php" name="locatie">Locatie</a></li>
             </ul>
         </nav>
     </header>
-    <div class="body_container">
+    <div class="">
 
         <canvas id="canvas" resize ></canvas>
 

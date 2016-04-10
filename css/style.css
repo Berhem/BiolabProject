@@ -3,22 +3,26 @@ body{
     margin: 0;
     padding: 0;
     background-color: #D1D1D1;
-    color: #fff;
+    color: #000000;
     font-family: "Lato", sans-serif;
     font-size: 12px;
 }
 
 .container {
-    max-width: 1920px;
-    min-height: 1080px;
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 
 h1{
-    font-family: "Century Gothic", sans-serif;
-    font-size:  30px;
-    font-weight: bolder;
-    color: #EFC94C;
+    font-family: "Lato Light", sans-serif;
+    font-size:  30pt;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
 }
 a{
     text-decoration: none;
@@ -42,11 +46,11 @@ a{
     max-width: 200px;
 }
 .menu_wrapper{
-    max-width: 850px;
+    max-width: 650px;
     text-align:  center;
-    float: left;
-    margin-left: 350px;
-    padding-top: 26px;
+    float: right;
+    margin-right: 350px;
+    padding-top: 25px;
 }
 .menu_wrapper ul{
     list-style:  none;
@@ -80,6 +84,9 @@ a{
 
 .body_container{
 
+    margin-top: 20px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 canvas[resize] {
@@ -87,11 +94,219 @@ canvas[resize] {
     height: 100%;
 }
 
+#breadcrumbs {
+
+    margin-top: 10px;
+    padding: 5px;
+    color: black;
+}
+
+.activeBreadcrumbs{
+    color: #D43149;
+}
+.activeBreadcrumbs:hover, .activeBreadcrumbs:active{
+    text-decoration: underline;
+}
+
+.tital_Container{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+/*-----------------------------Team.PHP STYLE----------------------------------------------------*/
+.info_About_Container{
+
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.info_About_Wrapper{
+    float: left;
+    position: relative;
+    max-height: 500px;
+
+}
+
+.image_Wrapper{
+    position: relative;
+}
+.infoAboutImage{
+
+    float: left;
+    display: block;
+    max-width: 40%;
+}
+.infoAboutImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.infoAboutText{
+
+    display: block;
+    float: left;
+    color: #ffffff;
+    max-width: 50%;
+    padding: 20px 50px 20px 50px;
+}
+.infoAboutText h2{
+
+    font-size: 36pt;
+    text-align: center;
+}
+
+.infoAboutText p{
+
+    font-weight: 300;
+    font-size: 16pt;
+}
+
+.infoAboutText ul{
+
+    font-weight: 300;
+    font-size: 18pt;
+}
+
+.infoAboutText ul li{
+
+    padding: 10px;
+}
+
+.styleOne{
+    background-color: #D43149 ;
+}
+
+.styleTwo{
+
+    background-color: #232c3c;
+}
+
+/*---------------------------------Contact.PHP STYLE ------------------------------------*/
+.image_Banner_Container{
+
+    width: 100%;
+    margin-top: 20px;
+
+}
+.image_Banner_Wrapper{
+
+    position: relative;
+    float: left;
+    max-width: 100%;
+    width: auto;
+
+
+}
+.image_Banner_Wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.image_Banner_Container h1{
+
+    position: absolute;
+    top: 450px;
+    z-index: 25;
+    margin-left: 200px;
+    width: auto;
+}
+
+.tital_Container ul{
+
+    color: #000000;
+    font-size: 16pt;
+    list-style: square;
+    list-style-image: url("");
+    width: 80%;
+    margin-left: 100px;
+}
+.tital_Container ul li{
+
+    padding: 20px;
+}
+
+.tital_Container table{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tital_Container table label{
+
+    font-size: 14pt;
+}
+.tital_Container table input{
+    padding: 5px;
+    border: 2px #000000 solid;
+    width: 50%;
+}
+.tital_Container .button{
+    padding: 10px;
+    float: right;
+    width: 100px;
+    background-color: #D43149;
+    color: #ffffff;
+}
+
+/*-----------------------------------Locatie.PHP STYLE -------------------------------------*/
+#map{
+    width: 100%;
+    height: 700px;
+}
+
+#calendar{
+    width: 900px;
+    margin: 0 auto;
+    font: 12px "Lato", sans-serif;
+}
+.l_text{
+    font-size: 12pt;
+    margin-left: 50px;
+    padding: 10px;
+}
+
 /*---------------------------------FOOTER STYLE ----------------------------------------*/
 
 .footer_container{
+    float: left;
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
     background-color: #000000;
+    margin-top: 100px;
 
+}
+
+.footer_wrapper{
+    position: relative;
+    padding: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.footer_section{
+    width: 33%;
+    color: #ffffff;
+    float: left;
+}
+.footer_section h2{
+
+    border-bottom: 2px #333333 solid;
+    width: 20%;
+    text-align: center;
+    color: #D43149;
+}
+.footer_section ul{
+    list-style: none;
+    padding: 0%;
+}
+.footer_section ul li{
+    padding: 5px;
+}
+.footer_section a{
+    color: #ffffff;
+    font-size: 14pt;
+}
+.footer_section a:hover, .footer_section a:active{
+    color: #D43149;
 }

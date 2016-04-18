@@ -1,8 +1,8 @@
 <?php
-include('http://localhost/BiolabProject/checklogin.php'); // Includes Login Script
+include 'checklogin.php'; // Includes Login Script
 
 if(isset($_SESSION['login_user'])){
-    header("location: http://localhost/BiolabProject/dashboard.php");
+    header("Location: https://localhost/BiolabProject/dashboard.php");
 }
 ?>
 <!DOCTYPE html>
@@ -11,6 +11,9 @@ if(isset($_SESSION['login_user'])){
     <title>Login</title>
 </head>
 <body>
+<div id="breadcrumbs">
+    <a href="index.php">home</a> > <a class="activeBreadcrumbs" href="login.php">team</a>
+</div>
 <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
     <tr>
         <form method="post" action="">
@@ -27,12 +30,12 @@ if(isset($_SESSION['login_user'])){
                     <tr>
                         <td>Wachtwoord</td>
                         <td>:</td>
-                        <td><input name="password" type="text" id="password" placeholder="**********"></td>
+                        <td><input name="password" type="password" id="password" placeholder="**********"></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
-                        <td><input type="submit" name="Submit" value="Login"></td>
+                        <td><input type="submit" name="submit" value="Login"></td>
                     </tr>
                     <span><?php echo $error; ?></span>
                 </table>

@@ -134,6 +134,11 @@
             <div class="">
                 <?php
 
+                    include_once 'Database/CRUD/GebruikerDb.php';
+
+                    foreach (GebruikerDb::getAll() as $item){
+                        $item->Voonaam;
+                    }
 
                 ?>
             </div>

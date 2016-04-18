@@ -34,6 +34,22 @@
     </div>
     <div class="footer_container">
 
+        <div class="footer_wrapper">
+            <div class="footer_section">
+                <h2>Navigatie</h2>
+                <ul>
+                    <li><a href="index.php" >Home</a></li>
+                    <li><a href="project.php" >Projecten</a></li>
+                    <li><a href="team.php" >Team</a></li>
+                    <li><a href="contact.php" >Contact</a></li>
+                    <li><a href="locatie.php" >Locatie</a></li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h2>Login</h2>
+                <a href="login.php" >Login</a>
+            </div>
+        </div>
     </div>
 
 </div>

@@ -1,5 +1,7 @@
 <?php
 
+ //include_once 'DatabaseFactory.php';
+
 class Database {
 
     protected $computernaam;

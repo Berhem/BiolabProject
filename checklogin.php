@@ -8,7 +8,7 @@
     if (isset($_POST['submit'])) {
         if (empty($_POST['email']) || empty($_POST['password'])) {
             $error = "Username or Password is invalid";
-            echo "ddd";
+            echo "";
         }
         else
         {
@@ -20,10 +20,10 @@
             if($result = GebruikerDb::getAllByEmail($email)){
 
                 $_SESSION['login_user'] = $result->Email;
-                header("location: http://localhost/BiolabProject/dashboard.php");
+                header("Location: dashboard.php");
             }
             else {
-                $error = "Email or Password is invalid";
+                $error = "Email or Password is invalidd";
                 echo "ddd";
             }
          }

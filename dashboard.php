@@ -1,5 +1,5 @@
 <?php
-    include('http://localhost/BiolabProject/session.php');
+    include 'session.php';
 ?>
 <!DOCTYPE html>
 <html>

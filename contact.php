@@ -49,7 +49,7 @@
         </div>
 
         <div class="tital_Container">
-            <h1>Aanmelding</h1>
+            <h1>Interesse?</h1>
             <form name="contactform" method="post" action="send_form_email.php">
                 <table width="900px">
                     <tr>
@@ -81,7 +81,7 @@
                             <label for="boodschap">Boodschap</label>
                         </td>
                         <td valign="top">
-                            <textarea  name="boodschap" maxlength="1000" cols="25" rows="6"></textarea>
+                            <textarea  name="boodschap" maxlength="50" cols="25" rows="6"></textarea>
                         </td>
                     </tr>
                     <tr>
@@ -95,6 +95,22 @@
     </div>
     <div class="footer_container">
 
+        <div class="footer_wrapper">
+            <div class="footer_section">
+                <h2>Navigatie</h2>
+                <ul>
+                    <li><a href="index.php" >Home</a></li>
+                    <li><a href="project.php" >Projecten</a></li>
+                    <li><a href="team.php" >Team</a></li>
+                    <li><a href="contact.php" >Contact</a></li>
+                    <li><a href="locatie.php" >Locatie</a></li>
+                </ul>
+            </div>
+            <div class="footer_section">
+                <h2>Login</h2>
+                <a href="login.php" >Login</a>
+            </div>
+        </div>
     </div>
 
 </div>

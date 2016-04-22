@@ -135,9 +135,12 @@
                 <?php
 
                     include_once 'Database/CRUD/GebruikerDb.php';
-
                     foreach (GebruikerDb::getAll() as $item){
-                        $item->Voonaam;
+
+                        echo "something";
+                        //echo $item->Email;
+                        echo $item->Email;
+                        echo "something";
                     }
 
                 ?>

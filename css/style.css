@@ -310,3 +310,198 @@ canvas[resize] {
 .footer_section a:hover, .footer_section a:active{
     color: #D43149;
 }
+
+/**************************************LOGIN STYLE**************************************/
+
+
+/**************************************DASHBOARD STYLE**********************************/
+#profile{
+
+    float: right;
+    padding: 20px;
+}
+#welcome{
+
+    margin-right: 50px;
+}
+#logout{
+    background-color: #D43149;
+
+}
+#logout:hover{
+    background-color: #d46569;
+}
+
+.dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d46569;
+}
+
+.tabel_wrapper{
+
+}
+.tabel{
+    width:  100%;
+}
+
+.tabel thead{
+    background-color: #d46569;
+    padding:  15px 7px;
+
+}
+.tabel thead tr th{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+.tabel tbody tr td{
+    padding: 13px;
+    text-align: center;
+}
+
+.detailBtn{
+    padding: 10px;
+    background: #DF4949;
+    border:  none;
+}
+.detailBtn:hover{
+    background: #DF5849;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.64);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.64);
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.64);
+}
+
+.submitBtn{
+    display: block;
+    margin-top: 2.5em;
+    padding: 1.5em;
+    width:  100%;
+    border: none;
+    background: #E75854;
+    color: #F9F6E5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 1.25pt;
+}
+.submitBtn:hover{
+    background: #A50A05;
+}
+.uploadBtn{
+    display: block;
+    margin-top: 2.5em;
+    padding: 1.5em;
+    width:  100%;
+    border: none;
+    background: #E27A3F;
+    color: #F9F6E5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 1.25;
+}
+.uploadBtn:hover, .uploadBtn:active, .uploadBtn:visited{
+    background: #286F81;
+}
+
+/*********************************FONT ICON STYLE AND SETUP**************************************/
+@font-face {
+    font-family: 'f';
+    src:    url('../fonts/f.eot?ieykzn');
+    src:    url('../fonts/f.eot?ieykzn#iefix') format('embedded-opentype'),
+    url('../fonts/f.ttf?ieykzn') format('truetype'),
+    url('../fonts/f.woff?ieykzn') format('woff'),
+    url('../fonts/f.svg?ieykzn#f') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'f' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    content: "\e900";
+}
+.icon-pencil:before {
+    content: "\e905";
+}
+.icon-image:before {
+    content: "\e90d";
+}
+.icon-profile:before {
+    content: "\e923";
+}
+.icon-file-text2:before {
+    content: "\e926";
+}
+.icon-clock:before {
+    content: "\e94e";
+}
+.icon-clock2:before {
+    content: "\e94f";
+}
+.icon-floppy-disk:before {
+    content: "\e962";
+}
+.icon-user-plus:before {
+    content: "\e973";
+}
+.icon-cog:before {
+    content: "\e994";
+}
+.icon-hammer:before {
+    content: "\e996";
+}
+.icon-enter:before {
+    content: "\ea13";
+}
+.icon-exit:before {
+    content: "\ea14";
+}

@@ -1,8 +1,9 @@
 <?php
-include 'checklogin.php'; // Includes Login Script
+include('checklogin.php'); // Includes Login Script
 
 if(isset($_SESSION['login_user'])){
-    header("Location: https://localhost/BiolabProject/dashboard.php");
+    header("Location: http://localhost/BiolabProject/dashboard.php");
+    //header("Location: http://dtsl.ehb.be/~berhem.isik/BiolabProject/dashboard.php");
 }
 ?>
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ if(isset($_SESSION['login_user'])){
 </head>
 <body>
 <div id="breadcrumbs">
-    <a href="index.php">home</a> > <a class="activeBreadcrumbs" href="login.php">team</a>
+    <a href="index.php">home</a> > <a class="activeBreadcrumbs" href="login.php">Login</a>
 </div>
 <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
     <tr>
@@ -35,7 +36,7 @@ if(isset($_SESSION['login_user'])){
                     <tr>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
-                        <td><input type="submit" name="submit" value="Login"></td>
+                        <td><input type="submit" name="submit" value="Login"></i></td>
                     </tr>
                     <span><?php echo $error; ?></span>
                 </table>

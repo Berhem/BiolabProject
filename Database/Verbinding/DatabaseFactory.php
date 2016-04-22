@@ -10,7 +10,7 @@ class DatabaseFactory {
     public static function getDatabase() {
 
         if (self::$verbinding == null) {
-            $mijnComputernaam = "localhost:3306";
+            $mijnComputernaam = "localhost";
             $mijnGebruikersnaam = "root";
             $mijnWachtwoord = "root";
             $mijnDatabase = "biolabbrussels";
@@ -18,5 +18,18 @@ class DatabaseFactory {
         }
         return self::$verbinding;
     }
+/*
+    public static function getDatabase()
+    {
 
+        if (self::$verbinding == null) {
+            $mijnComputernaam = "localhost";
+            $mijnGebruikersnaam = "IsikBerhemBIOLAB";
+            $mijnWachtwoord = "mHZG0h";
+            $mijnDatabase = "IsikBerhemBIOLAB";
+            self::$verbinding = new Database($mijnComputernaam, $mijnGebruikersnaam, $mijnWachtwoord, $mijnDatabase);
+        }
+        return self::$verbinding;
+    }
+*/
 }

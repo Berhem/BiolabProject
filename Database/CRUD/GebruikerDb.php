@@ -42,6 +42,17 @@ class GebruikerDb {
         return $resultatenArray;
     }
 
+    public static function checkLogin($email,$wachtwoord) {
+        $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Gebruiker WHERE Email='?' AND Wachtwoord='?'", array($email,$wachtwoord));
+        $resultatenArray = array();
+        for ($index = 0; $index < $resultaat->num_rows; $index++) {
+            $databaseRij = $resultaat->fetch_array();
+            $nieuw = self::converteerRijNaarObject($databaseRij);
+            $resultatenArray[$index] = $nieuw;
+        }
+        return $resultatenArray;
+    }
+
     public static function getById($id) {
         $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Gebruiker WHERE Id=?", array($id));
         if ($resultaat->num_rows == 1) {

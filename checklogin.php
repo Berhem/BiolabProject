@@ -1,6 +1,6 @@
 <?php
 
-    include_once 'Database/CRUD/GebruikerDb.php';
+    include_once('Database/CRUD/GebruikerDb.php');
 
     session_start(); // Starting Session
     $error=''; // Variable To Store Error Message
@@ -14,17 +14,16 @@
         {
         // Define $username and $password
             $email=$_POST['email'];
-            $password=$_POST['password'];
+            $password= md5($_POST['password']);
 
+            if(GebruikerDb::checkLogin($email,$password)){
 
-            if($result = GebruikerDb::getAllByEmail($email)){
-
-                $_SESSION['login_user'] = $result->Email;
-                header("Location: dashboard.php");
+                $_SESSION['login_user'] = $email;
+                header("Location: http://localhost/BiolabProject/dashboard.php");
+                //header("Location: http://dtsl.ehb.be/~berhem.isik/BiolabProject/dashboard.php");
             }
             else {
                 $error = "Email or Password is invalidd";
-                echo "ddd";
             }
          }
     }

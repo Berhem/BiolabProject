@@ -12,7 +12,7 @@ class ProjectDb {
     public static function getAll() {
         $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Project");
         $resultatenArray = array();
-        for ($index = 0; $index < $resultaat->num_rows; $index++) {
+        for ($index = 0; $index < $resultaat['num_rows']; $index++) {
             $databaseRij = $resultaat->fetch_array();
             $nieuw = self::converteerRijNaarObject($databaseRij);
             $resultatenArray[$index] = $nieuw;

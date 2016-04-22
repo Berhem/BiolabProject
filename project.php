@@ -37,7 +37,7 @@
                 include_once 'Database/CRUD/ProjectDb.php';
 
                 foreach (ProjectDb::getAll() as $item){
-                    
+                    $item['Titel'];
                 }
             ?>
             <div></div>

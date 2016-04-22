@@ -6,11 +6,13 @@
     // Storing Session
     $user_check = $_SESSION['login_user'];
 
-    if($result = GebruikerDb::getAllByEmail($user_check)) {
+    if(GebruikerDb::getAllByEmail($user_check)) {
 
-        $login_session = $result->Voornaam;
+        $login_session = $user_check;
+
     }
     if(!isset($login_session)){
         header('Location: http://localhost/BiolabProject/index.php'); // Redirecting To Home Page
+        //header("Location: http://dtsl.ehb.be/~berhem.isik/BiolabProject/index.php");
     }
 ?>

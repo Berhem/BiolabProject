@@ -9,40 +9,29 @@ if(isset($_SESSION['login_user'])){
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-2.2.2.js"></script>
 </head>
 <body>
 <div id="breadcrumbs">
     <a href="index.php">home</a> > <a class="activeBreadcrumbs" href="login.php">Login</a>
 </div>
-<table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
-    <tr>
-        <form method="post" action="">
-            <td>
-                <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
-                    <tr>
-                        <td colspan="3"><strong>Gebruiker Login </strong></td>
-                    </tr>
-                    <tr>
-                        <td width="78">Email</td>
-                        <td width="6">:</td>
-                        <td width="294"><input name="email" type="text" id="email" placeholder="Email"></td>
-                    </tr>
-                    <tr>
-                        <td>Wachtwoord</td>
-                        <td>:</td>
-                        <td><input name="password" type="password" id="password" placeholder="**********"></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td><input type="submit" name="submit" value="Login"></i></td>
-                    </tr>
-                    <span><?php echo $error; ?></span>
-                </table>
-            </td>
+<div class="login-page">
+    <div class="form">
+        <div class="logo_wrapper">
+            <a class="logo" href="index.php"><img src="img/Logo.png" /></a>
+        </div>
+        <span><?php echo $error; ?></span>
+        <form class="login-form" method="post" action="">
+            <input type="text" placeholder="Email" id="email" name="email" />
+            <input type="password" placeholder="wachtwoord" id="password" name="password"/>
+            <input type="submit" name="submit" value="LOGIN">
         </form>
-    </tr>
-</table>
+    </div>
+</div>
 </body>
 </html>

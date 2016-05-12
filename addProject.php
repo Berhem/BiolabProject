@@ -1,7 +1,7 @@
 <?php
     include('session.php');
-    include('admin/add.php');
-    include_once('Database/CRUD/GebruikerDb.php');
+    include_once('Database/CRUD/ProjectDb.php');
+    include('add.php');
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,6 @@
             <div class="dropdown">
                 <button class="dropbtn"><i class="icon-cog"></i> Settings</button>
                 <div class="dropdown-content">
-                    <a href="addProject.php"><i class="icon-pencil"></i> Project Toevoegen</a>
                     <?php
                     if ($login_session == 'Admin@Admin.com'){
                         echo "<a href='gToevoegen.php'><i class='icon-user-plus'> Gebruiker Toevoegen </i>";
@@ -41,7 +40,7 @@
         </div>
 
         <div class="tital_Container">
-            <h1>Gebruiker Toevoegen</h1>
+            <h1>Project Toevoegen</h1>
             <form name="gToevogenform" method="post" action="">
                 <table width="900px">
                     <?php
@@ -50,64 +49,96 @@
                     ?>
                     <tr>
                         <td valign="top">
-                            <label for="voornaam">Voornaam :</label>
+                            <label for="titel">Titel :</label>
                         </td>
                         <td valign="top">
-                            <input  type="text" name="voornaam" maxlength="50" size="30">
+                            <input  type="text" name="titel" maxlength="50" size="30">
                         </td>
                     </tr>
                     <tr>
                         <td valign="top"">
-                        <label for="naam">Naam :</label>
+                        <label for="omschrijving">Omschrijving :</label>
                         </td>
                         <td valign="top">
-                            <input  type="text" name="naam" maxlength="50" size="30">
+                            <textarea  type="text" name="omschrijving" cols="40" rows="10" ></textarea>
                         </td>
                     </tr>
                     <tr>
                         <td valign="top"">
-                        <label for="Functie">Functie :</label>
+                        <label for="verantwoordelijke">Verantwoordelijke :</label>
                         </td>
                         <td valign="top">
-                            <input  type="text" name="functie" maxlength="50" size="30">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
-                            <label for="email">Email :</label>
-                        </td>
-                        <td valign="top">
-                            <input  type="email" name="email" maxlength="80" size="50">
+                            <input  type="text" name="verantwoordelijke" maxlength="50" size="30">
                         </td>
                     </tr>
                     <tr>
                         <td valign="top">
-                            <label for="wachtwoord">Wachtwoord :</label>
+                            <label for="doelgroep">Doelgroep :</label>
                         </td>
                         <td valign="top">
-                            <input  type="password" name="password" maxlength="80" size="30">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
-                            <label for="wachtwoord">Wachtwoord Bevestigen :</label>
-                        </td>
-                        <td valign="top">
-                            <input  type="password" name="passwordbev" maxlength="80" size="30">
+                            <input  type="text" name="doelgroep" maxlength="80" size="50">
                         </td>
                     </tr>
                     <tr>
                         <td valign="top">
-                            <label for="Bio">Bio :</label>
+                            <label for="Technieken">Technieken :</label>
                         </td>
                         <td valign="top">
-                            <textarea name="bio" rows="20" cols="50"></textarea>
+                            <textarea  type="text" name="technieken" cols="40" rows="10" ></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="links">Links :</label>
+                        </td>
+                        <td valign="top">
+                            <textarea  type="text" name="links" cols="40" rows="10" ></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <h1>Add English</h1>
+                <table width="900px">
+                    <?php
+                    echo '<h2>', $error,  '</h1> ';
+                    echo '<h2>', $error_message,  '</h1> ';
+                    ?>
+                    <tr>
+                        <td valign="top">
+                            <label for="titel">Titel :</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="titelENG" maxlength="50" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"">
+                        <label for="Description">Description :</label>
+                        </td>
+                        <td valign="top">
+                            <textarea  type="text" name="descriptionENG" cols="40" rows="10" ></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="targetaudience">Target audience:</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="targetaudienceENG" maxlength="80" size="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="techniques">Techniques :</label>
+                        </td>
+                        <td valign="top">
+                            <textarea  type="text" name="techniquesENG" cols="40" rows="10" ></textarea>
                         </td>
                     </tr>
 
+
                     <tr>
                         <td colspan="2" style="text-align:center">
-                            <input class="button" type="submit" value="Aanmaken" name="submit"/>
+                            <input class="button" type="submit" value="Toevoegen" name="submit"/>
                         </td>
                     </tr>
                 </table>

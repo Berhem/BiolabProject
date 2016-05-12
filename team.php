@@ -7,13 +7,26 @@
     <link rel="apple-touch-icon" href="images/favicon.png" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/jquery-2.2.2.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".teamItem").each(function () {
+                // /var hue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
+                var color = '#'; // hexadecimal starting symbol
+                var letters = ['588C7E', 'F2E394', 'F2AE72', 'D96459', '8C4646', '00585F', '009393', 'FF3800','7E8F7C','C63D0F','3B3738']; //Set your colors here
+                color += letters[Math.floor((Math.random()*0.5) * letters.length)];
+                $(this).css("background", color);
+            });
+
+        });
+
+    </script>
 
 </head>
 <body>
 <div class="container">
     <header class="header_container">
         <div class="logo_wrapper">
-            <a class="logo" href="index.php"><img src="img/Logo2.png" /></a>
+            <a class="logo" href="index.php"><img src="img/Logo.png" /></a>
         </div>
         <nav class="menu_wrapper">
             <ul>
@@ -131,16 +144,22 @@
 
         <div class="tital_Container">
             <h1>Team</h1>
-            <div class="">
+            <div class="team_wrapper">
                 <?php
 
                     include_once 'Database/CRUD/GebruikerDb.php';
                     foreach (GebruikerDb::getAll() as $item){
-
-                        echo "something";
-                        //echo $item->Email;
-                        echo $item->Email;
-                        echo "something";
+                        $id = $item->Id;
+                        echo "<div class='teamItem'>";
+                        echo "<a href='teamContent.php?id=$id'>";
+                        echo "<div class='profileImg'> <img src='uploads/$item->Afbeelding'/> </div>";
+                        //echo "<div>","<img src='", $item->Afbeelding,"' />", "</div>";
+                        echo "<div class='profileText'>";
+                        echo "<h2>", $item->Voornaam, " ", $item->Naam, "</h2>";
+                        echo "<h3>", $item->Functie, "</h3>";
+                        echo "</a>";
+                        echo "</div>";
+                        echo "</div>";
                     }
 
                 ?>

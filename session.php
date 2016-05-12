@@ -6,9 +6,10 @@
     // Storing Session
     $user_check = $_SESSION['login_user'];
 
-    if(GebruikerDb::getAllByEmail($user_check)) {
+    if($result=GebruikerDb::getAllByEmail($user_check)) {
 
         $login_session = $user_check;
+        $login_session_ID = $result[0]->Id;
 
     }
     if(!isset($login_session)){

@@ -53,6 +53,7 @@ class GebruikerDb {
         return $resultatenArray;
     }
 
+
     public static function getById($id) {
         $resultaat = self::getVerbinding()->voerSqlQueryUit("SELECT * FROM Gebruiker WHERE Id=?", array($id));
         if ($resultaat->num_rows == 1) {
@@ -66,7 +67,7 @@ class GebruikerDb {
 
 
     public static function insert($gebruiker) {
-        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO Gebruiker(Naam, Voornaam, Email, Wachtwoord, Afbeelding) VALUES ('?','?', '?', '?', '?')", array($gebruiker->Naam, $gebruiker->Voornaam, $gebruiker->Email, $gebruiker->Wachtwoord, $gebruiker->Afbeelding));
+        return self::getVerbinding()->voerSqlQueryUit("INSERT INTO Gebruiker(Naam, Voornaam, Email, Wachtwoord, Afbeelding, Functie, Bio) VALUES ('?','?', '?', '?', '?', '?', '?')", array($gebruiker->Naam, $gebruiker->Voornaam, $gebruiker->Email, $gebruiker->Wachtwoord, $gebruiker->Afbeelding, $gebruiker->Functie, $gebruiker->Bio));
     }
 
     public static function deleteById($id) {
@@ -78,11 +79,14 @@ class GebruikerDb {
     }
 
     public static function update($gebruiker) {
-        return self::getVerbinding()->voerSqlQueryUit("UPDATE Gebruiker SET Email='?',Wachtwoord='?',Afbeelding='?' WHERE Id=?", array($gebruiker->Email, $gebruiker->Wachtwoord, $gebruiker->Afbeelding, $gebruiker->Id));
+        return self::getVerbinding()->voerSqlQueryUit("UPDATE Gebruiker SET Wachtwoord='?',Afbeelding='?', Functie='?', Bio='?' WHERE Id=?", array($gebruiker->Wachtwoord, $gebruiker->Afbeelding, $gebruiker->Functie, $gebruiker->Bio, $gebruiker->Id));
+    }
+    public static function updateAfbeelding($afbeelding, $id) {
+        return self::getVerbinding()->voerSqlQueryUit("UPDATE Gebruiker SET Afbeelding='?' WHERE Id=?", array($afbeelding, $id));
     }
 
     protected static function converteerRijNaarObject($databaseRij) {
-        return new Gebruiker($databaseRij['Id'], $databaseRij['Naam'], $databaseRij['Voornaam'], $databaseRij['Email'], $databaseRij['Wachtwoord'], $databaseRij['Afbeelding']);
+        return new Gebruiker($databaseRij['Id'], $databaseRij['Naam'], $databaseRij['Voornaam'], $databaseRij['Email'], $databaseRij['Wachtwoord'], $databaseRij['Afbeelding'], $databaseRij['Functie'], $databaseRij['Bio']);
     }
 
 }

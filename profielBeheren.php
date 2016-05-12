@@ -1,6 +1,7 @@
 <?php
     include('session.php');
     include_once('Database/CRUD/GebruikerDb.php');
+    include('update.php');
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +27,7 @@
             <div class="dropdown">
                 <button class="dropbtn"><i class="icon-cog"></i> Settings</button>
                 <div class="dropdown-content">
+                    <a href="addProject.php"><i class="icon-pencil"></i> Project Toevoegen</a>
                     <?php
                     if ($login_session == 'Admin@Admin.com'){
                         echo "<a href='gToevoegen.php'><i class='icon-user-plus'> Gebruiker Toevoegen </i>";
@@ -40,7 +42,88 @@
 
         <div class="tital_Container">
             <h1>Profiel Beheer</h1>
-            
+            <form name="updateform" method="post" action="">
+                <?php
+                    foreach (GebruikerDb::getAllByEmail($login_session) as $result){
+
+                        $naam = $result->Naam;
+                        $voornaam = $result->Voornaam;
+                        $email = $result->Email;
+                        $ww = $result->Wachtwoord;
+                        $afbeelding = $result->Afbeelding;
+                        $functie = $result->Functie;
+                        $bio = $result->Bio;
+                    }
+                ?>
+                <img class="image_medium" src="uploads/<?php echo $afbeelding?>">
+                <table width="900px">
+                    <tr>
+                        <td valign="top">
+                            <label for="voornaam">Voornaam :</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="voornaam" maxlength="50" size="30" value="<?php echo $voornaam;?> " disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"">
+                        <label for="naam">Naam :</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="naam" maxlength="50" size="30" value="<?php echo $naam;?>" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="email">Email :</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="email" name="email" maxlength="80" size="30" value="<?php echo $email;?>" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"">
+                        <label for="Functie">Functie :</label>
+                        </td>
+                        <td valign="top">
+                            <input  type="text" name="functie" maxlength="50" size="30" value="<?php echo $functie;?>" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="email">Wachtwoord :</label>
+                        </td>
+                        <td valign="top">
+                            <a class="activeBreadcrumbs" href='wijzigWachtwoord.php'>Wachtwoord wijzigen</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="fileToUpload">Selecteer een afbeelding  :</label>
+                        </td>
+                        <td>
+                            <a class="activeBreadcrumbs" href='uploadImageform.php'> Upload Image</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="Bio">Bio :</label>
+                        </td>
+                        <td valign="top">
+                            <textarea name="bio" rows="20" cols="50"><?php echo $functie;?></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            <input class="button" type="submit" value="Aanpassen" name="submit">
+                        </td>
+                    </tr>
+                </table>
+                <?php
+                    echo '<h2>', $error,  '</h2> ';
+                    echo '<h2>', $error_message,  '</h2> ';
+                ?>
         </div>
 
     </div>

@@ -109,7 +109,7 @@
 <div class="container">
     <header class="header_container">
         <div class="logo_wrapper">
-            <a class="logo" href="index.php"><img src="img/Logo2.png" /></a>
+            <a class="logo" href="index.php"><img src="img/Logo.png" /></a>
         </div>
         <nav class="menu_wrapper">
             <ul>
@@ -128,8 +128,9 @@
 
         <div class="tital_Container">
             <h1>Calender</h1>
-            <div id="calendar">
+            <div id="calendar"/>
         </div>
+
         <div class="tital_Container">
             <h1>Locatie</h1>
             <div id="map"> </div>

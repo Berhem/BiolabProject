@@ -16,9 +16,10 @@
             $email=$_POST['email'];
             $password= md5($_POST['password']);
 
-            if(GebruikerDb::checkLogin($email,$password)){
+            if($result = GebruikerDb::checkLogin($email,$password)){
 
-                $_SESSION['login_user'] = $email;
+                $em = $result[0]->Email;
+                $_SESSION['login_user'] = $em;
                 header("Location: http://localhost/BiolabProject/dashboard.php");
                 //header("Location: http://dtsl.ehb.be/~berhem.isik/BiolabProject/dashboard.php");
             }

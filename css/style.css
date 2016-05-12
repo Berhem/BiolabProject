@@ -115,6 +115,37 @@ canvas[resize] {
     background-color: #ffffff;
 }
 
+/*-----------------------------PROJECT.PHP STYLE -----------------------------------------------*/
+.project_wrapper{
+    padding: 50px;
+    float: left;
+}
+
+.projectItem{
+    width: 24%;
+    float: left;
+    margin-left: 10px;
+}
+.projectText{
+    padding: 30px;
+}
+.projectText:hover{
+    opacity: 0.6;
+}
+.projectItem h2{
+    font-family: "Lato Light", sans-serif;
+    font-size:  30pt;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+#posts {
+    width: 90%;
+    height: 700px;
+    margin: auto
+}
+
 /*-----------------------------Team.PHP STYLE----------------------------------------------------*/
 .info_About_Container{
 
@@ -184,6 +215,47 @@ canvas[resize] {
     background-color: #232c3c;
 }
 
+.team_wrapper{
+    padding: 50px;
+    float: left;
+}
+
+.teamItem{
+    width: 24%;
+    float: left;
+    margin-left: 10px;
+    background-color: #000000;
+    cursor: pointer;
+}
+.teamItem:hover{
+    background-color: #A50A05;
+}
+.profileImg{
+
+}
+
+.profileImg img{
+    max-width: 100%;
+}
+.profileText:hover{
+    opacity: 0.5;
+}
+.teamItem h2{
+    font-family: "Lato Light", sans-serif;
+    font-size:  30pt;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.teamItem h3{
+
+    font-family: "Lato", sans-serif;
+    font-size:  15pt;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
 /*---------------------------------Contact.PHP STYLE ------------------------------------*/
 .image_Banner_Container{
 
@@ -238,10 +310,17 @@ canvas[resize] {
     font-size: 14pt;
 }
 .tital_Container table input{
+     padding: 5px;
+     border: 2px #000000 solid;
+     width: 50%;
+ }
+
+.tital_Container table textarea{
     padding: 5px;
     border: 2px #000000 solid;
     width: 50%;
 }
+
 .tital_Container .button{
     padding: 10px;
     float: right;
@@ -274,7 +353,6 @@ canvas[resize] {
     width: 100%;
     min-height: 500px;
     background-color: #000000;
-    margin-top: 100px;
 
 }
 
@@ -312,7 +390,103 @@ canvas[resize] {
 }
 
 /**************************************LOGIN STYLE**************************************/
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+.form span{
+    background: #D43149;
+    color: #FFFFFF;
+    font-size: 10pt;
+    padding: 15px;
+    margin: 0 0 15px;
+    width: 89%;
+    float: left;
 
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form input[type=submit] {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #D43149;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.form input[type=submit]:hover,.form input[type=submit]:active,.form input[type=submit]:focus {
+    background: #ff324a;
+}
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+.form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.form .register-form {
+    display: none;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+.container .info span .fa {
+    color: #EF3B3A;
+}
 
 /**************************************DASHBOARD STYLE**********************************/
 #profile{
@@ -379,7 +553,7 @@ canvas[resize] {
 }
 
 .tabel thead{
-    background-color: #d46569;
+    background-color: #bfbfbf;
     padding:  15px 7px;
 
 }
@@ -396,14 +570,36 @@ canvas[resize] {
 
 .detailBtn{
     padding: 10px;
-    background: #DF4949;
+    background: #D43149;
     border:  none;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 .detailBtn:hover{
-    background: #DF5849;
-    -webkit-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.64);
-    -moz-box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.64);
-    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.64);
+    background: #D43149;
+    color: #000;
+}
+.deletebtn{
+    padding: 10px;
+    background: #000;
+    border:  none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.deletebtn:hover{
+    background: #434343;
+    color: #FFFFFF;
+}
+.editBtn{
+    padding: 10px;
+    background: #3a87ad;
+    border:  none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.editBtn:hover{
+    background: #3ec9ef;
+    color: #FFFFFF;
 }
 
 .submitBtn{
@@ -418,6 +614,7 @@ canvas[resize] {
     letter-spacing: 1px;
     font-weight: 800;
     font-size: 1.25pt;
+    cursor: pointer;
 }
 .submitBtn:hover{
     background: #A50A05;
@@ -433,7 +630,8 @@ canvas[resize] {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 800;
-    font-size: 1.25;
+    font-size: 1.25pt;
+    cursor: pointer;
 }
 .uploadBtn:hover, .uploadBtn:active, .uploadBtn:visited{
     background: #286F81;
